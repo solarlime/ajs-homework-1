@@ -4,7 +4,8 @@
   "description": "Browser-based game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/solarlime/ajs-homework-1/issues"
   },
-  "homepage": "https://github.com/solarlime/ajs-homework-1#readme"
+  "homepage": "https://github.com/solarlime/ajs-homework-1#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "core-js": "^3.5.0"
+  }
 }
